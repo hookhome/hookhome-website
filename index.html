@@ -1,50 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HOOKHOME Furniture</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HookHomeCo | Furniture Manufacturer & OEM Factory</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: #fff;
+    }
+
+    /* HERO */
+    .hero {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511') center/cover;
+      display: flex;
+      align-items: center;
+      padding: 60px;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top:0;left:0;
+      width:100%;height:100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 600px;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      margin-right: 10px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn.secondary {
+      background: #ff6600;
+    }
+
+    /* SECTION */
+    section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    /* FACTORY */
+    .factory {
+      background: #f9f9f9;
+    }
+
+    /* CONTACT */
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      padding: 12px;
+      background: #222;
+      color: white;
+      border: none;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* WHATSAPP FLOAT */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+  </style>
 </head>
+
 <body>
-<header>
-<h1>HOOKHOME</h1>
-<nav>
-<a href="#about">About</a>
-<a href="#products">Products</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
 
-<section class="hero">
-<h2>Modern Furniture Manufacturer Since 2000</h2>
-<p>Tables · Computer Desks · Coffee Tables · Sofa Beds · Cabinets</p>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>China Furniture Manufacturer & OEM Factory</h1>
+    <p>20+ Years Experience in High-Quality Furniture Production  
+    Tables · Beds · Sofas · Office Furniture · Custom OEM Solutions</p>
+
+    <a class="btn" href="#contact">Get a Quote</a>
+    <a class="btn secondary" href="https://wa.me/1234567890">WhatsApp Us</a>
+  </div>
+</div>
+
+<!-- TRUST -->
+<section>
+  <h2>Why Choose Us</h2>
+  <div class="grid">
+    <div class="card"><h3>20+ Years</h3><p>Furniture manufacturing experience</p></div>
+    <div class="card"><h3>Global Export</h3><p>Serving worldwide clients</p></div>
+    <div class="card"><h3>Eco Materials</h3><p>Sustainable production</p></div>
+    <div class="card"><h3>OEM / ODM</h3><p>Custom furniture solutions</p></div>
+  </div>
 </section>
 
-<section id="about">
-<h2>About Us</h2>
-<p>HOOKHOME is a furniture manufacturer located in Suqian, Jiangsu, China.</p>
+<!-- PRODUCTS -->
+<section>
+  <h2>Our Products</h2>
+  <div class="grid">
+    <div class="card"><h3>Tables</h3><p>Dining & office tables</p></div>
+    <div class="card"><h3>Beds</h3><p>Modern & custom beds</p></div>
+    <div class="card"><h3>Sofas</h3><p>Fabric & leather sofas</p></div>
+    <div class="card"><h3>Office</h3><p>Ergonomic furniture</p></div>
+  </div>
 </section>
 
-<section id="products">
-<h2>Products</h2>
-<ul>
-<li>Tables</li>
-<li>Computer Desks</li>
-<li>Coffee Tables</li>
-<li>Sofa Beds</li>
-<li>Cabinets</li>
-</ul>
+<!-- FACTORY -->
+<section class="factory">
+  <h2>Manufacturing Excellence</h2>
+  <p>
+    Modern furniture factory with advanced production lines, strict QC system,
+    and global export experience.
+  </p>
 </section>
 
-<section id="contact">
-<h2>Contact</h2>
-<p>Email: hello.hookhome@gmail.com</p>
-<p>WhatsApp: +86 17712747717</p>
-<p>WeChat: hookhome</p>
+<!-- OEM -->
+<section>
+  <h2>OEM / ODM Services</h2>
+  <p>
+    Custom design, branding, bulk production, and fast sample development for global clients.
+  </p>
 </section>
 
-<a class="wa" href="https://wa.me/8617712747717">WhatsApp</a>
-<script src="js/script.js"></script>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Get a Quote</h2>
+  <input type="text" placeholder="Your Name">
+  <input type="email" placeholder="Email">
+  <input type="text" placeholder="Product Type">
+  <textarea rows="5" placeholder="Your Message"></textarea>
+  <button>Send Inquiry</button>
+</section>
+
+<footer>
+  © 2026 HookHomeCo Furniture. All rights reserved.
+</footer>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/1234567890">
+  WhatsApp
+</a>
+
 </body>
 </html>
