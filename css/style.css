@@ -348,12 +348,10 @@ margin-top:40px;
 }
 
 .partner-logo img{
-width:160px;
+width:180px;
 height:auto;
 display:block;
 margin:auto;
-opacity:0.8;
-filter:grayscale(100%);
 }
 /* COLLECTIONS UPDATE */
 
