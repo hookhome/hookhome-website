@@ -348,12 +348,13 @@ margin-top:40px;
 }
 
 .partner-logo img{
-max-width:320px;
-width:100%;
+width:160px;
 height:auto;
-opacity:.95;
+display:block;
+margin:auto;
+opacity:0.8;
+filter:grayscale(100%);
 }
-
 /* COLLECTIONS UPDATE */
 
 .collection-grid{
